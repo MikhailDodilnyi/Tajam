@@ -1,0 +1,22 @@
+.more {
+	display: inline-block;
+	background-color: transparent;
+	border: none;
+	padding: 10px;
+	text-transform: uppercase;
+	transition: color .3s ease-in-out, border-color .3s ease-in-out;
+	font-family: $btn-font-sans-serif;
+
+	&:hover {
+		color: $dark-sea;
+	}
+
+	&.bottom {
+		border: 1px solid $sea;
+		
+		&:hover {
+			color: $dark-sea;
+			border-color: $dark-sea;
+		}
+	}
+}

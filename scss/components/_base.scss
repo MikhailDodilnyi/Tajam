@@ -1,0 +1,93 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+	color: $base-text-color;
+	background: $base-background-color;
+	font: #{$font-size-base}/#{$line-height-base} $base-font-family;
+	min-width: $base-min-width;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+p, ul, ol {
+	margin: 0 0 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.2;
+	margin: 0 0 .5em;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: $h1-font-size;
+}
+
+h2 {
+	font-size: $h2-font-size;
+}
+
+h3 {
+	font-size: $h3-font-size;
+}
+
+h4 {
+	font-size: $h4-font-size;
+}
+
+h5 {
+	font-size: $h5-font-size;
+}
+
+h6 {
+	font-size: $h6-font-size;
+}
+
+a {
+	font-family: $base-font-sans-serif;
+	font-weight: 900;
+	color: $white;
+	text-decoration: none;
+	font-size: $h6-font-size;
+}
+
+.main-title {
+	font-family: $bottom-title;
+	color: $white;
+	text-transform: capitalize;
+
+	&.bottom {
+		text-transform: uppercase;
+		color: $dark-gray;
+	}
+}
+
+.main-text {
+	color: $white;
+	opacity: 0.5;
+	&.bottom {
+		opacity: 1;
+		color: $gray;
+	}
+}
+
+
+a:hover {
+	text-decoration: none;
+}
+
+.more {
+	font-family: $bottom-title;
+	font-size: 16px;
+	color: $sea;
+}
